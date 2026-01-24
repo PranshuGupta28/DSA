@@ -13,7 +13,6 @@ public:
             if(prices[i]<buyPrice){
             buyPrice=prices[i];
             }
-            maxProfit=max(currProfit,maxProfit);
             }
         return maxProfit;     
     }
