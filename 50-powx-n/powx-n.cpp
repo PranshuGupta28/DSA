@@ -1,6 +1,7 @@
 class Solution {
 public:
     double myPow(double x, long long n) {
+      
         //   if(n>0){
         //     double ans= x;
         //     for(int i=1;i<n;i++){
@@ -52,15 +53,13 @@ public:
             n=-n;
             x=1/x;
         }
-
         double ans = 1;
-
         while(n > 0){
             if(n % 2 == 1){
                 ans =ans* x;
             }
-            x=x* x;
-            n =n/ 2;
+            x=x*x;
+            n=n/2;
         }
         return ans;
     }
