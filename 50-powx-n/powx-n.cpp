@@ -19,7 +19,6 @@ public:
         //  int ans=1;
         // return ans;
         // }
-    
 
         // if (n==0)return 1;
 
@@ -58,10 +57,10 @@ public:
 
         while(n > 0){
             if(n % 2 == 1){
-                ans *= x;
+                ans =ans* x;
             }
-            x *= x;
-            n /= 2;
+            x=x* x;
+            n =n/ 2;
         }
         return ans;
     }
