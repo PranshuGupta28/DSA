@@ -56,6 +56,8 @@ public:
          temp3=temp3->next;
          temp2=temp2->next;
             }
+            head= head->next;
+            return head;
 
         
     
@@ -92,11 +94,11 @@ public:
     //         temp2 = temp2->next;
     //         dummyNode = dummyNode->next;
     //     }
-        temp3 = head;
-        head= head->next;
-        temp3->next = NULL;
-        delete temp3;
-        return head;
+        // temp3 = head;
+        // head= head->next;
+        // temp3->next = NULL;
+        // delete temp3;
+        // return head;
         
      }
 };
