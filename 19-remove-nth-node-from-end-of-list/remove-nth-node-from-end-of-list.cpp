@@ -34,16 +34,16 @@ public:
             return head;
         }
 
-        if (x==len){
-            ListNode*temp=head;
-            int i=1;
-            while(i<len-1){
-            temp=temp->next;
-            i++;
-            }
-            temp->next=NULL;
-            return head;
-        }
+        // if (x==len){
+        //     ListNode*temp=head;
+        //     int i=1;
+        //     while(i<len-1){
+        //     temp=temp->next;
+        //     i++;
+        //     }
+        //     temp->next=NULL;
+        //     return head;
+        // }
         
         ListNode*prev=head;
         int i=1;
