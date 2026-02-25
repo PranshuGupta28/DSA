@@ -9,17 +9,17 @@
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        
-        while(headB!=NULL){
-            ListNode*L1=headA;
-            while(L1!=NULL){
-                if(L1==headB){
+        ListNode*L1=headA;
+        while(L1!=NULL){
+            ListNode*L2=headB;
+            while(L2!=NULL){
+                if(L1==L2){
                     cout<<"Intersected at'"<<L1->val<<"'";
-                    return headB;;
+                    return L1;;
                 }
-                L1=L1->next;
+                L2=L2->next;
             }
-            headB=headB->next;
+            L1=L1->next;
         }
         cout<<"No intersection";
         return NULL;
