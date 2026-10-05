@@ -7,7 +7,7 @@ public:
             if(f.find(nums[i])!=f.end()){
                 ans.push_back(nums[i]);
             }
-             f[nums[i]] = i;
+            f[nums[i]] = i;
         }
         return ans;
     }
